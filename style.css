@@ -295,7 +295,7 @@ table {
 }
 .stat-wrapper{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding: 100px 0 50px 0;
 }
 .stat-item{
