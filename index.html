@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
     <title>Ivan_FrontEnd</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./burger.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -13,8 +15,10 @@
     <div class="container">
         <div class="header-wrapper">
             <div class="header-top">
-                <div><img src="img/logo (5).png"></div>
-                <div>
+                <div><img class="header-logo" src="img/logo (5).png"></div>
+                <input type="checkbox" id="burger">
+                <label for="burger"></label>
+                <nav>
                     <ul class="menu">
                          <li><a class="menu-item" href="#about-me">Обо мне</a></li>
                          <li><a class="menu-item" href="#skills">Навыки</a></li>
@@ -23,7 +27,7 @@
                          <li><a class="menu-item" href="#reviews">Отзывы</a></li>
                          <li><a class="menu-item" href="#contacts">Контакты</a></li>
                     </ul>
-                </div>
+                </nav>
             </div>
             <p class="name">Привет, я Иван Иванов</p>
             <h1 class="frontend">frontend-<br>разработчик</h1>
@@ -32,7 +36,7 @@
         </div>
     </div>
 </header>
-<section class="about-me">
+<section id="about-me" class="about-me">
     <div class="container">
         <div class="about-me-wrapper">
             <h2 class="title">Обо мне</h2>
@@ -41,7 +45,7 @@
         </div>
     </div>
 </section>
-<section class="skills">
+<section id="skills" class="skills">
     <div class="container">
         <div class="skills-wrapper">
             <h2 class="title">Навыки</h2>
@@ -65,7 +69,7 @@
         </div>
     </div>
 </section>
-<section class="services">
+<section id="services" class="services">
     <div class="container">
         <div class="services-wrapper">
             <h2 class="title">Услуги</h2>
@@ -90,7 +94,7 @@
     </div>
 
 </section>
-<section class="my-works">
+<section id="portfolio" class="my-works">
     <div class="container">
         <div class="my-works-wrapper">
             <h2 class="title-my-works">Мои работы</h2>
@@ -101,17 +105,17 @@
                 <a class="link" href="#">E-commerce</a>
             </div>
             <div class="my-works-photo">
-                <a class="link-grid" href="#"><img src="img/img1.png"></a>
-                <a class="link-grid" href="#"><img src="img/img2.png"></a>
-                <a class="link-grid" href="#"><img src="img/img3.png"></a>
-                <a class="link-grid" href="#"><img src="img/img4.png"></a>
-                <a class="link-grid" href="#"><img src="img/img5.png"></a>
-                <a class="link-grid" href="#"><img src="img/img6.png"></a>
+                <a href="#"><img class="link-grid" src="img/img1.png"></a>
+                <a href="#"><img class="link-grid" src="img/img2.png"></a>
+                <a href="#"><img class="link-grid" src="img/img3.png"></a>
+                <a href="#"><img class="link-grid" src="img/img4.png"></a>
+                <a href="#"><img class="link-grid" src="img/img5.png"></a>
+                <a href="#"><img class="link-grid" src="img/img6.png"></a>
             </div>
         </div>
     </div>
 </section>
-<section class="reviews-section">
+<section id="reviews" class="reviews-section">
     <div class="container">
         <div class="reviews-wrapper">
             <h2 class="title-my-works">Отзывы клиентов</h2>
@@ -133,28 +137,28 @@
         <div class="stat-wrapper">
             <div class="stat-item">
                 <img class="stat-pic" src="img/bag.png">
-                <p class="text">Выполненных работ</p>
+                <p class="stat-text">Выполненных работ</p>
                 <p class="number">56</p>
             </div>
              <div class="stat-item">
                 <img class="stat-pic" src="img/clients.png">
-                <p class="text">Довольных клиентов</p>
+                <p class="stat-text">Довольных клиентов</p>
                 <p class="number">23</p>
             </div>
              <div class="stat-item">
                 <img class="stat-pic" src="img/coffee-2.png">
-                <p class="text">Выпито чашек кофе</p>
+                <p class="stat-text">Выпито чашек кофе</p>
                 <p class="number">477</p>
             </div>
              <div class="stat-item">
                 <img class="stat-pic" src="img/review.png">
-                <p class="text">Всего отзывов</p>
+                <p class="stat-text">Всего отзывов</p>
                 <p class="number">48</p>
             </div>
         </div>
     </div>
 </section>
-<section>
+<section id="contacts">
     <div class="container">
         <div class="contacts-wrapper">
             <h2 class="title">Контакты</h2>
@@ -164,9 +168,9 @@
                     <a class="contact-link" href="tel: +38 (050) 111 11 11">+38 (050) 111 11 11</a>
                     <a class="contact-link" href="mailto: frontend-monster@email.com">frontend-monster@email.com</a>
                     <div class="media">
-                        <a class="social-red" target="_blank" href="https://www.instagram.com/nafanichka.ev/"><img src="img/insta.png"></a>
-                        <a class="social-red" target="_blank" href="https://fb.com/"><img src="img/fb.png"></a>
-                        <a class="social-red" target="_blank" href="https://telegram.org/"><img src="img/telegram.png"></a>
+                        <a target="_blank" href="https://www.instagram.com/nafanichka.ev/"><img class="social-red" src="img/insta.png"></a>
+                        <a target="_blank" href="https://fb.com/"><img class="social-red" src="img/fb.png"></a>
+                        <a target="_blank" href="https://telegram.org/"><img class="social-red" src="img/telegram.png"></a>
                     </div>
                 </div>
                 <form class="forms">
@@ -193,7 +197,7 @@
 <footer class="footer">
     <div class="container">
         <div class="footer-wrapper">
-            <img src="img/logo-footer.png">
+            <img class="footer-logo" src="img/logo-footer.png">
         </div>
     </div>
 </footer>
